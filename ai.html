@@ -9,19 +9,26 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🎓 Tư vấn Ngành học</h1>
-            <p>Khám phá ngành học phù hợp tại FPT Polytechnic</p>
+            <h2>Khám phá ngành học phù hợp tại FPT Polytechnic</h2>
+            <p>🎓 Tư vấn Ngành học</p>
+            
         </div>
 
         <div class="navigation">
             <button class="nav-btn active" onclick="showSection('survey')">
                 📝 Khảo sát
             </button>
+            <button class="nav-btn" onclick="showSection('subjects')">
+                📚 Môn học
+            </button>
             <button class="nav-btn" onclick="showSection('results')">
                 🎯 Kết quả
             </button>
             <button class="nav-btn" onclick="showSection('history')">
                 📚 Lịch sử
+            </button>
+            <button class="nav-btn" onclick="showSection('infographic')">
+                🎨 Infographic
             </button>
         </div>
 
@@ -134,6 +141,342 @@
                 </div>
             </div>
 
+            <!-- Subjects Section -->
+            <div id="subjects" class="section">
+                <h2>📚 Giới thiệu các môn học</h2>
+                <p class="section-description">Khám phá chi tiết về các môn học chính và mối liên hệ với nghề nghiệp tương lai</p>
+                
+                <div class="subjects-grid">
+                    <!-- Mathematics -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">📊</div>
+                            <h3>Toán học</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Nền tảng của tư duy logic và phân tích, Toán học là chìa khóa mở ra nhiều cánh cửa nghề nghiệp.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Lập trình viên & Kỹ sư phần mềm</li>
+                                    <li>Nhà phân tích dữ liệu & Thống kê</li>
+                                    <li>Kỹ sư tài chính & Ngân hàng</li>
+                                    <li>Nhà nghiên cứu khoa học</li>
+                                    <li>Giáo viên & Giảng viên</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Tư duy logic và phân tích</li>
+                                    <li>Khả năng giải quyết vấn đề</li>
+                                    <li>Tính chính xác và cẩn thận</li>
+                                    <li>Khả năng tư duy trừu tượng</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Làm nhiều bài tập thực hành</li>
+                                    <li>Học theo nhóm để trao đổi ý tưởng</li>
+                                    <li>Áp dụng vào thực tế cuộc sống</li>
+                                    <li>Tham gia các cuộc thi Toán học</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>Toán học đang trở thành kỹ năng cốt lõi trong thời đại AI và dữ liệu lớn. Nhu cầu nhân lực có nền tảng Toán học mạnh sẽ ngày càng tăng cao.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physics -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">⚛️</div>
+                            <h3>Vật lý</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Khoa học nghiên cứu về vật chất, năng lượng và các quy luật tự nhiên, tạo nền tảng cho công nghệ hiện đại.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Kỹ sư điện tử & Viễn thông</li>
+                                    <li>Kỹ sư cơ khí & Tự động hóa</li>
+                                    <li>Nhà nghiên cứu vật liệu mới</li>
+                                    <li>Kỹ sư năng lượng & Môi trường</li>
+                                    <li>Chuyên gia quang học & Laser</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Hiểu biết về các nguyên lý cơ bản</li>
+                                    <li>Khả năng thực nghiệm và quan sát</li>
+                                    <li>Tư duy phân tích và suy luận</li>
+                                    <li>Kỹ năng sử dụng thiết bị đo lường</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Kết hợp lý thuyết với thực hành</li>
+                                    <li>Thực hiện các thí nghiệm đơn giản</li>
+                                    <li>Quan sát hiện tượng trong cuộc sống</li>
+                                    <li>Xem video và mô phỏng 3D</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>Vật lý đang mở ra những cơ hội mới trong lĩnh vực công nghệ lượng tử, năng lượng tái tạo và vật liệu nano.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Literature -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">📚</div>
+                            <h3>Văn học</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Nghệ thuật ngôn từ giúp phát triển khả năng giao tiếp, tư duy phản biện và sự nhạy cảm văn hóa.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Nhà báo & Biên tập viên</li>
+                                    <li>Copywriter & Content Creator</li>
+                                    <li>Giáo viên & Giảng viên</li>
+                                    <li>Nhà văn & Dịch giả</li>
+                                    <li>Chuyên viên truyền thông</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Khả năng viết và diễn đạt</li>
+                                    <li>Tư duy phản biện và phân tích</li>
+                                    <li>Hiểu biết văn hóa và xã hội</li>
+                                    <li>Khả năng giao tiếp hiệu quả</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Đọc nhiều tác phẩm đa dạng</li>
+                                    <li>Viết nhật ký và sáng tác</li>
+                                    <li>Thảo luận và tranh luận</li>
+                                    <li>Tham gia các câu lạc bộ văn học</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>Trong thời đại số, kỹ năng viết và giao tiếp vẫn là những kỹ năng quan trọng nhất trong mọi lĩnh vực nghề nghiệp.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- English -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">🌍</div>
+                            <h3>Tiếng Anh</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Ngôn ngữ toàn cầu mở ra cơ hội học tập, làm việc và giao lưu quốc tế trong thời đại hội nhập.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Thông dịch viên & Biên dịch</li>
+                                    <li>Hướng dẫn viên du lịch</li>
+                                    <li>Nhân viên kinh doanh quốc tế</li>
+                                    <li>Giáo viên tiếng Anh</li>
+                                    <li>Chuyên viên đối ngoại</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Phát âm chuẩn và ngữ điệu</li>
+                                    <li>Vốn từ vựng phong phú</li>
+                                    <li>Ngữ pháp chính xác</li>
+                                    <li>Kỹ năng giao tiếp tự tin</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Xem phim và nghe nhạc tiếng Anh</li>
+                                    <li>Đọc sách và báo tiếng Anh</li>
+                                    <li>Thực hành giao tiếp với người bản xứ</li>
+                                    <li>Sử dụng ứng dụng học ngôn ngữ</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>Tiếng Anh là yêu cầu bắt buộc trong hầu hết các công việc có thu nhập cao và cơ hội thăng tiến tốt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Information Technology -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">💻</div>
+                            <h3>Công nghệ thông tin</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Lĩnh vực công nghệ đang phát triển mạnh mẽ, tạo ra những cơ hội nghề nghiệp đa dạng và thu nhập cao.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Lập trình viên & Kỹ sư phần mềm</li>
+                                    <li>Chuyên gia bảo mật mạng</li>
+                                    <li>Nhà phân tích dữ liệu</li>
+                                    <li>Quản trị viên hệ thống</li>
+                                    <li>Chuyên gia AI & Machine Learning</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Tư duy logic và giải thuật</li>
+                                    <li>Khả năng học hỏi công nghệ mới</li>
+                                    <li>Kỹ năng làm việc nhóm</li>
+                                    <li>Khả năng giải quyết vấn đề</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Thực hành lập trình thường xuyên</li>
+                                    <li>Tham gia các dự án thực tế</li>
+                                    <li>Học từ các nguồn trực tuyến</li>
+                                    <li>Tham gia hackathon và coding contest</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>CNTT là ngành có tốc độ phát triển nhanh nhất với nhu cầu nhân lực cao và mức lương cạnh tranh trên toàn cầu.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">💼</div>
+                            <h3>Kinh doanh</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Nghiên cứu về cách tổ chức, quản lý và phát triển doanh nghiệp trong môi trường kinh tế hiện đại.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Quản lý kinh doanh & Marketing</li>
+                                    <li>Chuyên gia tài chính & Kế toán</li>
+                                    <li>Nhà khởi nghiệp & Doanh nhân</li>
+                                    <li>Chuyên viên tư vấn chiến lược</li>
+                                    <li>Quản lý dự án & Sản xuất</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Tư duy chiến lược và phân tích</li>
+                                    <li>Kỹ năng lãnh đạo và quản lý</li>
+                                    <li>Khả năng giao tiếp và thuyết phục</li>
+                                    <li>Hiểu biết về thị trường và xu hướng</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Đọc sách kinh doanh và case study</li>
+                                    <li>Tham gia các cuộc thi khởi nghiệp</li>
+                                    <li>Thực tập tại các công ty</li>
+                                    <li>Tham gia các câu lạc bộ kinh doanh</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>Kinh doanh luôn là lĩnh vực có nhu cầu nhân lực cao với cơ hội thăng tiến và thu nhập không giới hạn.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">🎨</div>
+                            <h3>Thiết kế</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Nghệ thuật sáng tạo kết hợp với công nghệ để tạo ra những sản phẩm đẹp mắt và hữu ích.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Thiết kế đồ họa & UI/UX</li>
+                                    <li>Thiết kế nội thất & Kiến trúc</li>
+                                    <li>Thiết kế thời trang & Sản phẩm</li>
+                                    <li>Thiết kế web & Mobile app</li>
+                                    <li>Chuyên gia thương hiệu</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Khả năng sáng tạo và thẩm mỹ</li>
+                                    <li>Sử dụng thành thạo công cụ thiết kế</li>
+                                    <li>Hiểu biết về màu sắc và bố cục</li>
+                                    <li>Khả năng giao tiếp và thuyết phục</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Thực hành thiết kế thường xuyên</li>
+                                    <li>Học từ các designer nổi tiếng</li>
+                                    <li>Tham gia các cuộc thi thiết kế</li>
+                                    <li>Xây dựng portfolio cá nhân</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>Thiết kế đang trở thành yếu tố quan trọng trong mọi lĩnh vực, từ công nghệ đến thương mại và giải trí.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing -->
+                    <div class="subject-card">
+                        <div class="subject-header">
+                            <div class="subject-icon">📢</div>
+                            <h3>Marketing</h3>
+                        </div>
+                        <div class="subject-content">
+                            <p class="subject-description">Nghệ thuật và khoa học về việc kết nối sản phẩm với khách hàng thông qua các chiến lược thông minh.</p>
+                            
+                            <div class="subject-details">
+                                <h4>🎯 Ứng dụng nghề nghiệp:</h4>
+                                <ul>
+                                    <li>Chuyên viên Marketing số</li>
+                                    <li>Quản lý thương hiệu</li>
+                                    <li>Chuyên gia quảng cáo</li>
+                                    <li>Nhà phân tích thị trường</li>
+                                    <li>Chuyên viên PR & Truyền thông</li>
+                                </ul>
+                                
+                                <h4>💪 Kỹ năng cần thiết:</h4>
+                                <ul>
+                                    <li>Hiểu biết về tâm lý khách hàng</li>
+                                    <li>Kỹ năng sáng tạo nội dung</li>
+                                    <li>Phân tích dữ liệu và xu hướng</li>
+                                    <li>Khả năng giao tiếp và thuyết phục</li>
+                                </ul>
+                                
+                                <h4>📚 Phương pháp học tập:</h4>
+                                <ul>
+                                    <li>Thực hành các chiến dịch marketing</li>
+                                    <li>Học từ các case study thành công</li>
+                                    <li>Tham gia các khóa học online</li>
+                                    <li>Thực tập tại các agency</li>
+                                </ul>
+                                
+                                <h4>🚀 Triển vọng tương lai:</h4>
+                                <p>Marketing số đang phát triển mạnh mẽ với sự xuất hiện của AI, Big Data và các nền tảng mạng xã hội mới.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Results Section -->
             <div id="results" class="section">
                 <div id="resultsContent">
@@ -169,6 +512,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Infographic Section -->
+            <div id="infographic" class="section">
+                <div id="infographicContent">
+                    <div class="empty-state">
+                        <div style="font-size: 4rem; margin-bottom: 20px;">🎨</div>
+                        <h3>Chưa có dữ liệu để tạo Infographic</h3>
+                        <p>Hãy hoàn thành khảo sát để tạo Infographic tư vấn ngành học cá nhân hóa</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -179,38 +533,94 @@
 
     <div id="copilotChat" class="copilot-chat">
         <div class="copilot-header">
-            <h4>🤖 AI Copilot</h4>
-            <button class="copilot-close" onclick="toggleCopilot()">✕</button>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <h4>🤖 AI Copilot</h4>
+                <span class="copilot-status" id="copilotStatus">Demo Mode</span>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <button class="copilot-provider" onclick="switchProvider()" title="Chuyển đổi AI Provider">🔄</button>
+                <button class="copilot-clear" onclick="clearCopilotHistory()" title="Xóa lịch sử chat">🗑️</button>
+                <button class="copilot-close" onclick="toggleCopilot()">✕</button>
+            </div>
+        </div>
+        
+        <!-- Provider Selection -->
+        <div id="providerSelection" class="provider-selection" style="display: none;">
+            <h5>🤖 Chọn AI Provider:</h5>
+            <div class="provider-options">
+                <button class="provider-btn active" onclick="setProvider('demo')">
+                    🎭 Demo Mode
+                </button>
+                <button class="provider-btn" onclick="setProvider('github')">
+                    🚀 GitHub Copilot
+                </button>
+                <button class="provider-btn" onclick="setProvider('openai')">
+                    🧠 OpenAI GPT
+                </button>
+            </div>
+            <div class="provider-info" id="providerInfo">
+                <p><strong>Demo Mode:</strong> Sử dụng câu trả lời được thiết kế sẵn</p>
+            </div>
         </div>
         
         <div id="copilotMessages" class="copilot-messages">
             <div class="message bot">
                 Xin chào! Tôi là AI Copilot của FPT Polytechnic. Tôi có thể giúp bạn:
-                <br>• Tư vấn về các ngành học
+                <br><br><strong>🎯 Tư vấn chuyên môn:</strong>
+                <br>• Tư vấn ngành học phù hợp
                 <br>• Giải thích kết quả phân tích
-                <br>• Hướng dẫn sử dụng ứng dụng
+                <br>• Hướng dẫn chuẩn bị học tập
+                <br>• Thông tin triển vọng nghề nghiệp
+                <br><br><strong>🌟 Phát triển cá nhân:</strong>
+                <br>• Kỹ năng mềm và giao tiếp
+                <br>• Phương pháp học tập hiệu quả
+                <br>• Hỗ trợ tâm lý và định hướng
+                <br>• Cuộc sống sinh viên cân bằng
+                <br><br><strong>🏆 Nâng cao năng lực:</strong>
+                <br>• Chứng chỉ và kỹ năng bổ sung
+                <br>• Xu hướng nghề nghiệp tương lai
                 <br><br>Bạn cần hỗ trợ gì không? 😊
+                <br><br><small style="opacity: 0.7;">💡 Đang chạy ở chế độ Demo - Sử dụng câu trả lời được thiết kế sẵn</small>
             </div>
         </div>
 
         <div class="copilot-input-area">
             <div class="copilot-quick-replies" id="quickReplies">
                 <button class="quick-reply" onclick="sendQuickReply('Ngành nào phù hợp với tôi?')">
-                    Ngành nào phù hợp?
+                    🎯 Ngành nào phù hợp?
                 </button>
-                <button class="quick-reply" onclick="sendQuickReply('Giải thích kết quả phân tích')">
-                    Giải thích kết quả
-                </button>
+
                 <button class="quick-reply" onclick="sendQuickReply('Tôi nên học gì để chuẩn bị?')">
-                    Chuẩn bị gì?
+                    📚 Chuẩn bị gì?
                 </button>
                 <button class="quick-reply" onclick="sendQuickReply('Triển vọng nghề nghiệp')">
-                    Triển vọng nghề nghiệp
+                    🚀 Triển vọng nghề nghiệp
                 </button>
+                <button class="quick-reply" onclick="sendQuickReply('Phương pháp học tập hiệu quả')">
+                    💡 Học tập hiệu quả
+                </button>
+                <button class="quick-reply" onclick="sendQuickReply('Kỹ năng mềm cần thiết')">
+                    🌟 Kỹ năng mềm
+                </button>
+                <button class="quick-reply" onclick="sendQuickReply('Chứng chỉ và kỹ năng bổ sung')">
+                    🏆 Chứng chỉ
+                </button>
+                <button class="quick-reply" onclick="sendQuickReply('Định hướng tương lai')">
+                    🚀 Tương lai
+                </button>
+                <button class="quick-reply" onclick="sendQuickReply('Thông tin về FPT Polytechnic')">
+                    🏫 Thông tin trường
+                </button>
+                <button class="quick-reply" onclick="sendQuickReply('Học bổng và hỗ trợ tài chính')">
+                    💰 Học bổng
+                </button>
+
+                
+
             </div>
             
             <div class="copilot-input-box">
-                <input type="text" id="copilotInput" class="copilot-input" placeholder="Nhập câu hỏi của bạn..." onkeypress="handleCopilotKeyPress(event)">
+                <input type="text" id="copilotInput" class="copilot-input" placeholder="Nhập câu hỏi của bạn hoặc chọn câu hỏi nhanh bên trên..." onkeypress="handleCopilotKeyPress(event)">
                 <button id="copilotSend" class="copilot-send" onclick="sendCopilotMessage()">
                     ➤
                 </button>

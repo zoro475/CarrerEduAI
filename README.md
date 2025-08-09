@@ -1,158 +1,181 @@
-# EduCareerAI - Ứng dụng Tư vấn Ngành học Thông minh
+# 🎓 EduCareerAI - Tư vấn Ngành học FPT Polytechnic
 
-## Mô tả
-EduCareerAI là một ứng dụng Java Swing được thiết kế để tư vấn ngành học cho học sinh dựa trên sở thích và kỹ năng của họ. Ứng dụng sử dụng AI để phân tích và đưa ra các gợi ý ngành học phù hợp.
+Ứng dụng tư vấn ngành học thông minh sử dụng AI để giúp học sinh chọn ngành học phù hợp tại FPT Polytechnic.
 
-## Tính năng chính
+## ✨ Tính năng chính
 
-### 1. Tư vấn ngành học
-- Nhập thông tin cá nhân (họ tên, sở thích, kỹ năng)
-- Phân tích thông tin bằng AI (OpenAI GPT-3.5)
-- Hiển thị danh sách ngành học phù hợp với điểm phù hợp
-- Lưu kết quả tư vấn vào cơ sở dữ liệu
+### 🤖 AI Copilot Chat
+- **Trợ lý AI thông minh** - Tư vấn ngành học 24/7
+- **8 câu hỏi nhanh** được thiết kế sẵn cho các chủ đề phổ biến
+- **Chat real-time** với giao diện thân thiện
+- **Lưu trữ lịch sử** chat để tham khảo
+- **Hỗ trợ đa ngôn ngữ** (Tiếng Việt)
 
-### 2. Tạo QR Code
-- Tạo QR code chứa thông tin kết quả tư vấn
-- Lưu QR code dưới dạng file ảnh PNG
-- Tự động mở file QR code sau khi tạo
+### 📝 Khảo sát thông minh
+- **Form khảo sát chi tiết** với 15+ câu hỏi
+- **Đánh giá năng lực** qua điểm số các môn học
+- **Phân tích sở thích** với thang điểm 1-10
+- **Tư vấn cá nhân hóa** dựa trên thông tin thực tế
 
-### 3. Thống kê
-- Hiển thị biểu đồ tròn và cột về ngành học được quan tâm
-- Thống kê số lượng tư vấn theo từng ngành
-- Giao diện tabbed để xem nhiều loại biểu đồ
+### 🎯 Kết quả tư vấn
+- **Top 3 ngành học** phù hợp nhất
+- **Phân tích chi tiết** về mức độ phù hợp
+- **Lý do đề xuất** cụ thể cho từng ngành
+- **Triển vọng nghề nghiệp** và kỹ năng cần thiết
 
-### 4. Lưu trữ
-- Lưu kết quả tư vấn vào cơ sở dữ liệu SQLite
-- Xuất kết quả ra file text
-- Quản lý lịch sử tư vấn
+### 📊 Infographic & Xuất bản
+- **Infographic cá nhân hóa** với thiết kế đẹp mắt
+- **Biểu đồ kỹ năng** trực quan
+- **Xuất PDF/Ảnh** để chia sẻ
+- **Chia sẻ trực tuyến** qua Web Share API
 
-## Cấu trúc dự án
+## 🚀 Cài đặt và Sử dụng
 
-```
-EduCareerAI/
-├── src/
-│   └── main/
-│       └── java/
-│           ├── dao/                 # Data Access Objects
-│           │   ├── KetQuaDAO.java
-│           │   └── KetQuaDAOImpl.java
-│           ├── model/               # Model classes
-│           │   ├── KetQua.java
-│           │   └── NganhHoc.java
-│           ├── ui/                  # User Interface
-│           │   ├── MainForm.java
-│           │   ├── KetQuaForm.java
-│           │   └── ThongKeForm.java
-│           └── util/                # Utility classes
-│               ├── AIClient.java
-│               ├── DBConnection.java
-│               └── QRCodeUtil.java
-├── pom.xml                         # Maven configuration
-└── README.md                       # Documentation
-```
-
-## Yêu cầu hệ thống
-
-- Java 17 hoặc cao hơn
-- Maven 3.6+
-- Kết nối internet (để gọi OpenAI API)
-
-## Cài đặt và chạy
-
-### 1. Clone repository
+### 1. Tải về
 ```bash
-git clone <repository-url>
+git clone https://github.com/your-username/EduCareerAI.git
 cd EduCareerAI
 ```
 
-### 2. Cấu hình OpenAI API
-Mở file `src/main/java/util/AIClient.java` và thay thế `YOUR_OPENAI_API_KEY` bằng API key thực của bạn:
-```java
-private static final String API_KEY = "your-actual-openai-api-key";
+### 2. Cấu hình AI (Tùy chọn)
+Để sử dụng AI thực thay vì chế độ demo:
+
+```javascript
+// Trong file ai.js, thay đổi:
+const API_CONFIG = {
+    provider: 'openai', // Thay đổi từ 'demo' thành 'openai'
+    apiKey: 'sk-your-openai-api-key-here' // Thêm API key thực
+};
 ```
 
-### 3. Build và chạy
+**Lưu ý:** 
+- Chế độ demo hoạt động hoàn hảo mà không cần API key
+- Chỉ cần API key nếu muốn sử dụng OpenAI GPT thực
+
+### 3. Chạy ứng dụng
 ```bash
-# Build project
-mvn clean compile
-
-# Run application
-mvn exec:java -Dexec.mainClass="ui.MainForm"
+# Mở file ai.html trong trình duyệt
+# Hoặc sử dụng local server:
+python -m http.server 8000
+# Sau đó truy cập: http://localhost:8000/ai.html
 ```
 
-Hoặc có thể chạy trực tiếp từ IDE:
-- Mở project trong IDE (IntelliJ IDEA, Eclipse, NetBeans)
-- Chạy class `ui.MainForm`
+## 🔧 Cấu hình AI Copilot
 
-## Sử dụng
+### Chế độ Demo (Mặc định)
+- ✅ **Không cần API key**
+- ✅ **8 câu hỏi nhanh** với câu trả lời được thiết kế sẵn
+- ✅ **Tư vấn thông minh** dựa trên thuật toán phân tích
+- ✅ **Hoạt động offline** hoàn toàn
 
-### 1. Tư vấn ngành học
-1. Mở ứng dụng
-2. Nhập họ tên
-3. Nhập sở thích (ví dụ: lập trình, thiết kế, kinh doanh)
-4. Nhập kỹ năng (ví dụ: logic, sáng tạo, giao tiếp)
-5. Nhấn "Tư vấn ngay"
-6. Xem kết quả và chọn ngành học phù hợp
+### Chế độ OpenAI
+- 🔑 **Yêu cầu API key** OpenAI
+- 🤖 **AI thực** với khả năng tư vấn không giới hạn
+- 💬 **Chat tự nhiên** với context awareness
+- 🌐 **Cần kết nối internet**
 
-### 2. Tạo QR Code
-1. Sau khi có kết quả tư vấn
-2. Nhấn "Tạo QR Code"
-3. QR code sẽ được tạo và lưu trong thư mục `qr_codes/`
-4. File QR code sẽ tự động mở
+### Chế độ Gemini (Sắp tới)
+- 🔮 **Hỗ trợ Google Gemini** trong tương lai
+- 🌟 **Tích hợp AI đa nền tảng**
 
-### 3. Xem thống kê
-1. Nhấn "Xem thống kê" từ menu chính
-2. Xem biểu đồ tròn hoặc cột
-3. Phân tích xu hướng ngành học được quan tâm
+## 📱 Giao diện người dùng
 
-## Cơ sở dữ liệu
+### Desktop
+- **Layout responsive** với grid system
+- **AI Copilot** ở góc phải dưới
+- **Navigation tabs** cho các chức năng chính
 
-Ứng dụng sử dụng SQLite với 2 bảng chính:
+### Mobile
+- **Mobile-first design**
+- **Touch-friendly** interface
+- **AI Copilot** full-screen trên mobile
+- **Quick replies** tối ưu cho màn hình nhỏ
 
-### Bảng `ket_qua`
-- `id`: Khóa chính
-- `ho_ten`: Họ tên người dùng
-- `so_thich`: Sở thích
-- `ky_nang`: Kỹ năng
-- `thoi_gian`: Thời gian tư vấn
-- `ghi_chu`: Ghi chú
+## 🎨 Thiết kế và UX
 
-### Bảng `nganh_hoc`
-- `id`: Khóa chính
-- `ket_qua_id`: Khóa ngoại đến bảng ket_qua
-- `ten`: Tên ngành học
-- `ky_nang`: Kỹ năng cần thiết
-- `mo_ta`: Mô tả ngành học
-- `diem_phu_hop`: Điểm phù hợp (0-1)
+### Color Scheme
+- **Primary**: Gradient xanh-tím (#667eea → #764ba2)
+- **Secondary**: Xanh lá (#28a745), Đỏ (#dc3545)
+- **Neutral**: Xám (#6c757d), Trắng (#ffffff)
 
-## Công nghệ sử dụng
+### Typography
+- **Font chính**: System fonts (Arial, Helvetica, sans-serif)
+- **Headings**: Bold với gradient
+- **Body text**: Regular với line-height tối ưu
 
-- **Java Swing**: Giao diện người dùng
-- **OpenAI GPT-3.5**: AI tư vấn ngành học
-- **SQLite**: Cơ sở dữ liệu
-- **JFreeChart**: Biểu đồ thống kê
-- **ZXing**: Tạo QR code
-- **OkHttp**: HTTP client cho API calls
-- **Jackson**: JSON processing
-- **Maven**: Build tool
+### Animations
+- **Hover effects** mượt mà
+- **Loading spinners** với progress bar
+- **Smooth transitions** cho tất cả interactions
 
-## Lưu ý
+## 🔒 Bảo mật và Quyền riêng tư
 
-1. **API Key**: Cần có OpenAI API key hợp lệ để sử dụng tính năng AI
-2. **Kết nối internet**: Cần kết nối internet để gọi OpenAI API
-3. **Quyền ghi file**: Ứng dụng cần quyền ghi file để tạo QR code và lưu kết quả
-4. **Database**: SQLite database sẽ được tạo tự động khi chạy lần đầu
+- **Không lưu trữ** thông tin cá nhân lên server
+- **Local storage** cho lịch sử và preferences
+- **API calls** chỉ khi cần thiết (nếu sử dụng OpenAI)
+- **Không tracking** hoặc analytics
 
-## Đóng góp
+## 📚 Tài liệu API
 
-Để đóng góp vào dự án:
-1. Fork repository
-2. Tạo branch mới cho feature
-3. Commit changes
-4. Push to branch
-5. Tạo Pull Request
+### OpenAI Integration
+```javascript
+// Gửi request tới OpenAI
+const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+        model: 'gpt-3.5-turbo',
+        messages: [...],
+        temperature: 0.8,
+        max_tokens: 400
+    })
+});
+```
 
-## License
+### Demo Mode Algorithm
+- **Academic scoring** dựa trên điểm số các môn
+- **Interest matching** với thang điểm 1-10
+- **Career alignment** theo định hướng nghề nghiệp
+- **Skills assessment** dựa trên kỹ năng hiện tại
 
-Dự án này được phát hành dưới MIT License.
-# CarrerEduAI
+## 🚧 Tính năng đang phát triển
+
+- [ ] **Export PDF** với jsPDF
+- [ ] **Export Image** với html2canvas
+- [ ] **Gemini API** integration
+- [ ] **Multi-language** support
+- [ ] **Dark mode** theme
+- [ ] **Offline PWA** capabilities
+
+## 🤝 Đóng góp
+
+Chúng tôi hoan nghênh mọi đóng góp! Hãy:
+
+1. **Fork** repository
+2. **Tạo branch** cho feature mới
+3. **Commit** thay đổi
+4. **Push** lên branch
+5. **Tạo Pull Request**
+
+## 📄 License
+
+MIT License - Xem file [LICENSE](LICENSE) để biết thêm chi tiết.
+
+## 📞 Hỗ trợ
+
+- **Email**: support@educareerai.com
+- **GitHub Issues**: [Tạo issue mới](https://github.com/your-username/EduCareerAI/issues)
+- **Documentation**: [Wiki](https://github.com/your-username/EduCareerAI/wiki)
+
+## 🙏 Cảm ơn
+
+- **FPT Polytechnic** - Đối tác giáo dục
+- **OpenAI** - Công nghệ AI
+- **Cộng đồng** - Đóng góp và phản hồi
+
+---
+
+**Made with ❤️ for Vietnamese students**
